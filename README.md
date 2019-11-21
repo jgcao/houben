@@ -138,6 +138,7 @@ function get_zaiquan(order_id,zq_page=1){
 
 			if(zq_page == 1){
 				console.log('共有'+result.result.total+'个债权');
+				console.log('出借序号,债权编号,出借金额,保单号');
 			}
 
 			zq_list = result.result.list;
