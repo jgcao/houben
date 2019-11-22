@@ -58,7 +58,7 @@ function get_current_chujie(cj_page=1){
 
 					if(cj_len == pageSize){
 						cj_page++;
-						setTimeout(get_chujie(cj_page,auth_token),interval*pageSize);
+						setTimeout(get_current_chujie(cj_page,auth_token),interval*pageSize);
 					}
 
 				}else{
@@ -113,7 +113,7 @@ function get_transfer_chujie(cj_page=1){
 
 					if(cj_len == pageSize){
 						cj_page++;
-						setTimeout(get_chujie(cj_page,auth_token),interval*pageSize);
+						setTimeout(get_transfer_chujie(cj_page,auth_token),interval*pageSize);
 					}
 
 				}else{
