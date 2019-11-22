@@ -212,10 +212,10 @@ get_transfer_chujie();
 ![chrome](images/houben_chujiezhong.png)
 ![chrome](images/houben_zhuanrangzhong.png)
 
-#### 第7步，获取保单信息，执行如下代码
+#### 第7步，获取保单信息，执行如下
 
 ```
-// 获取债权和保单，执行上1步执行结果中的函数，一个一个执行
+// 获取债权和保单，执行上1步执行结果中的“获取保单号函数”，一个一个执行
 get_zaiquan(192123249);
 ```
 执行结果
