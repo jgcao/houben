@@ -1,10 +1,11 @@
 # 获取出借信息和保单号
 #### 第1步，下载chrome浏览器
-
+![chrome](images/chrome_download.png)
 #### 第2步，打开厚本网站，并登录
-
+![chrome](images/houben_chujie.png)
 #### 第3步，打开开发者模式，切换到console菜单
-
+![chrome](images/houben_dev.png)
+![chrome](images/houben_console.png)
 #### 第4步，加载插件，执行如下代码
 
 ```
@@ -12,6 +13,7 @@ var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="http
 var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}();
 
 ```
+![chrome](images/houben_plugin.png)
 
 #### 第5步，初始化函数，执行一下代码
 
@@ -50,6 +52,7 @@ function get_current_chujie(cj_page=1){
 						cj_ex_time = cj_list[i].expireDate;
 						cj_function = 'get_zaiquan('+cj_id+')';
 						cj_msg = cj_id+','+cj_title+','+cj_tz_je+','+cj_jz_je+','+cj_ex_time+','+cj_function;
+						console.log(cj_msg);
 
 					}
 
@@ -188,6 +191,8 @@ function get_baodan(order_id,bid_id,credit_amount,try_time=1){
 	});
 }
 ```
+![chrome](images/houben_function.png)
+
 #### 第6步，获取出借信息，执行如下代码
 
 ```
@@ -204,17 +209,21 @@ get_transfer_chujie();
 出借序号,产品名称,出借金额,价值金额,到期时间,获取保单号函数
 102153249,厚保宝180,7578.10,8337.55,2019/08/10 07:08:37,get_zaiquan(102153249)
 ```
+![chrome](images/houben_chujiezhong.png)
+![chrome](images/houben_zhuanrangzhong.png)
 
 #### 第7步，获取保单信息，执行如下代码
 
 ```
 // 获取债权和保单，执行上1步执行结果中的函数，一个一个执行
-get_zaiquan(102153249);
+get_zaiquan(192123249);
 ```
 执行结果
 
 ```
 出借序号,债权编号,出借金额,保单号
-102153249,342279,57.79,01185140000013A3020453
-102153249,247136,17.88,01185140000013A3010749
+192123249,342279,57.79,01185148880013A3020453
+192123249,247136,17.88,01185147890013A3010749
 ```
+
+![chrome](images/houben_baodan.png)
