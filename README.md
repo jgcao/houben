@@ -6,13 +6,16 @@
 #### 第3步，打开开发者模式，切换到console菜单
 ![chrome](images/houben_dev.png)
 ![chrome](images/houben_console.png)
-#### 第4步，加载插件，执行如下代码
-
+#### 第4步，加载插件，分别执行如下代码
+1、加载jquery
 ```
 var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://code.jquery.com/jquery-1.11.3.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}();
-var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}();
-
 ```
+2、加载cookie
+```
+var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}();
+```
+
 ![chrome](images/houben_plugin.png)
 
 #### 第5步，初始化函数，执行一下代码
